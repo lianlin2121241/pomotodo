@@ -1,0 +1,1176 @@
+@CHARSET "UTF-8";
+/*
+* @Author: Marte
+* @Date:   2017-07-12 14:59:50
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-14 08:44:34
+*/
+/* 与bootstrap冲突 */
+.input-group-addon{
+    top: 0!important;
+    color: #2684c2!important;
+}
+.modal{
+	position:absolute !important;
+} 
+/*********************** bootstrap重置 start  *************************/
+.modal-footer{
+	overflow:hidden;
+}
+.modal-body{
+	overflow:auto;
+}
+.col-xs-2{
+	padding-right:10px;
+	padding-left:10px;
+}
+.col-xs-10{
+	padding-right:10px;
+	padding-left:10px;
+}
+.table>tbody>tr>td{
+	vertical-align:middle;
+}
+/*********************** bootstrap重置 end  *************************/
+
+/*********************** 图标样式 开始  *************************/
+.case-icon{
+	width:20px;
+    height:20px;
+    background:url("../images/icons/toolsList.png") no-repeat 0px 0px;
+    display:inline-block;
+    cursor:pointer;
+}
+.case-icon-head{
+	 background-position:0px 0px;
+	 vertical-align: middle;
+	 margin-left: 15px;
+}
+.case-icon-list{
+	background-position:0px -20px;
+	vertical-align: middle;
+	margin-left: 15px;
+	width: 12px;
+    height: 14px;
+    margin-right: 5px;
+}
+.case-icon-addstaff{
+	background-position:1px -38px;
+}
+.case-icon-addtarget{
+	background-position:2px -58px;
+}
+.case-icon-import{
+	background-position:1px -77px;
+}
+.case-icon-delete{
+	background-position:2px -97px;
+}
+.case-icon-detail{
+	background-position:1px -118px;
+}
+.case-icon-edit{
+	background-position:2px -138px;
+}
+.case-icon-bukong{
+	background-position:0px -158px;
+}
+.case-icon-yujing{
+	background-position:2px -179px;
+}
+.case-icon-changelevel{
+	background-position:1px -200px;
+}
+.case-icon-chekong{
+	background-position:0px -219px;
+}
+.case-icon-recallyujing{
+	background-position:2px -239px;
+}
+.case-icon-addstafftoyujing{
+	background-position:0px -260px;
+}
+/*********************** 图标样式 结束  *************************/
+/*********************** 导航栏样式 开始  *************************/
+input::-webkit-input-placeholder{
+	font-size:12px;
+}
+.ds-container{
+	height:65px;
+	background:url("../images/titlebg.png") repeat 0px 0px;
+	font-size:12px;
+    position: relative;
+    z-index: 2;
+}
+.title-ul-div{
+	padding:12px;
+	text-align:right;
+	float:right;
+	width:auto;
+} 
+.title-img-div{
+	position: relative;
+}
+.sub-title{
+    color: #FFFFFF;
+    font-size: 19px;
+    position: absolute;
+    display: initial;
+    white-space: nowrap;
+    top: 25px;
+}
+#alarmMgrGroup01 li{
+    display: inline-block;
+    margin-right:20px;
+    font-size:18px;
+    cursor:pointer;
+}
+#alarmMgrGroup01 li a:hover{
+    border-bottom:2px solid #0053b3;
+}
+#alarmMgrGroup01 li.active a{
+	background-color:#0053b3;
+	border: 1px solid #CEDBE3;
+}
+#alarmMgrGroup01 a{
+	text-decoration: none;
+	color:#ffffff;
+	display:block;
+	height:40px;
+	line-height:40px;
+	padding-left:5px;
+	padding-right:5px;
+	font-size:12px;
+}
+.setLoginInfoHtml{
+	height:65px;
+	line-height:65px;
+	color:#ffffff;
+	width:auto;
+	float:right;
+	margin-right:20px;
+}
+/*********************** 导航栏样式 开始  *************************/
+
+/*********************** 案件树样式 开始  *************************/
+.whole-container{
+    /* margin-top: 25px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+.case-tree{
+    overflow-y: auto;
+    background-color:#ffffff;
+    font-size:12px;
+}
+.case-header{
+    color: #2684c2;
+    margin-top:10px;
+    background-color:#ffffff;
+    line-height: 40px;
+    height:40px;
+    font-size:14px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.glyphicon-file{
+    display:inline-block;
+    padding-left: 10px;
+}
+.case-tree li{
+   height: 40px;
+   line-height:40px;
+   border-bottom: 1px solid #e0e0e0;
+   cursor:pointer;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.case-tree li.active{
+	background-color:#d4eeff;
+}
+.case-tree li:HOVER{
+	background-color:#e0eff5;
+}
+/*********************** 案件树样式 开始  *************************/
+
+/*********************** 搜索栏样式 开始  *************************/
+.search-container{
+    background-color:#ffffff;
+    height:150px;
+    border-radius:5px;
+    font-size:12px;
+}
+.label-for-right{   
+	float:left;
+	text-align:right;
+	width:85px;
+}
+
+.person-handle input{
+	vertical-align: middle;
+    margin-top: 0px;
+}
+.search-container .col-xs-2{
+    text-align: right;
+}
+.button-case-search{
+    margin-top:100px;
+    font-size:12px;
+}
+.choiced-case{
+    background-color:#337ab7;
+    color:#ffffff;
+    display:inline-block;
+    border-radius:5px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    margin-left:10px;
+}
+.now-case{
+    height:35px;
+    margin-top:15px;
+    border-bottom: 1px dotted #9dbef6;
+}
+.person-level{
+    height:35px;
+    margin-top:15px;
+    border-bottom: 1px dotted #9dbef6;
+}
+.level-container{
+	display:inline-block;
+}
+.level-span.active{
+    background-color:#337ab7;
+    color:#ffffff;
+}
+.level-span{
+    display:inline-block;
+    margin-right:20px;
+    margin-left:10px;
+    width:55px;
+    padding:2px 0;
+    background-color:#ffffff;
+    border-radius:5px;
+    text-align:center;
+    color:black;
+    cursor:pointer;
+}
+.person-handle{
+    height:35px;
+    margin-top:15px;
+}
+.statue-choice{
+    margin-left:10px;
+    display:inline-block;
+    margin-right:20px;
+}
+.statue-choice label{
+	margin-bottom:0px;
+}
+.statue-choice {
+	margin-bottom:0px;
+}
+/*********************** 搜索栏样式 开始  *************************/
+
+/*********************** 工具栏样式 结束  *************************/
+.tools-div{
+  margin-top:10px;
+  margin-bottom:10px;
+  overflow: hidden;
+}
+.tools-span{
+	display:inline-block;
+    margin-right:10px;
+    background-color:#ffffff;
+    border-radius:5px;
+    padding:5px;
+}
+.tools-tools{
+    float: left;
+    color:#278add;
+}
+.tools-search{
+    float: right;
+    width:200px;
+}
+/*********************** 工具栏样式 开始  *************************/
+
+/*********************** 表格显示样式 开始  *************************/
+
+.results-div{
+    background-color:#ffffff;
+    font-size:12px
+}
+.table-show{
+	overflow: auto;
+}
+.table-show thead{
+    color:#278add;
+    background-color:#ffffff;
+}
+.table-show .table>tbody>tr>td,
+.table-show .table>thead>tr>th{
+	border:1px solid #ddddde;
+	vertical-align: middle;
+	text-align: center;
+}
+.table-show th{
+	background-color:#e9f9ff;
+}
+.table-show .cloneFooterPanel td{
+    background-color:#e4e4e4;
+}
+.order-by{
+    cursor:pointer;
+}
+.tr-span>span{
+	background-color:#529fe5;
+	color:#ffffff;
+	padding:5px;
+	border-radius:4px;
+}
+.tr-span:not(:first-child){
+	margin-left:10px;
+}
+/* 按钮加悬浮高亮 */
+.tr-span>span:HOVER{
+	color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+	cursor: pointer;
+}
+/* 斑马线 */
+.tb-custom tbody tr:nth-child(odd){
+	background:#eee;	
+}
+/* hover */
+.table-show .table>tbody>tr:hover{
+	background-color:#e0eff5;
+}
+.chosen-drop,.chosen-single{
+	font-size:12px;
+}
+
+/*********************** 表格显示样式 结束  *************************/
+
+/*********************** 分页样式 开始  *************************/
+.pagnation-div{
+	height:40px;
+}
+.table-paging{
+	margin:2.5% 0px;
+	overflow:hidden;
+}
+.table-paging{
+	margin:0px 2.5%;
+	overflow:hidden;
+	position: relative;
+}
+.paging-info{
+	margin-top: 12px;
+    overflow: hidden;
+    float: left;
+    position: absolute;
+}
+.paging-info .page-input{
+	margin-top:0px;
+}
+.paging-info .page-Button{
+	margin-top:0px;
+}
+.paging-plugin{
+	overflow:hidden;
+	float:right;
+}
+/*********************** 分页样式 结束  *************************/
+
+/******************************** 表单公共样式 start ********************************/
+.common-form .col-xs-1, .common-form .col-xs-10, .common-form .col-xs-11, .common-form .col-xs-12, .common-form .col-xs-2, .common-form .col-xs-3, .common-form .col-xs-4, .common-form .col-xs-5, .common-form .col-xs-6, .common-form .col-xs-7, .common-form .col-xs-8, .common-form .col-xs-9{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.common-form{
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    font-size: 12px;
+    color:#333333;
+}
+.from-label{
+    width:102px;
+    text-align: right;
+    height:36px;
+    line-height:26px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    float: left;
+}
+.required{
+    color:#ff0000;
+}
+.form-control-panel{
+    margin: 0px 0px 8px 102px;
+    position:relative;
+}
+.form-control-panel .form-control{
+    width:94%;
+}
+.col-xs-12 .form-control-panel .form-control{
+    width:98%;
+}
+.common-form .input-sm{
+    height:28px;
+    line-height: 28px;
+}
+.common-form select.input-sm{
+    padding-left:6px;
+}
+.form-control-btn{
+    font-weight: 100;
+    color: #1aad19;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    cursor:pointer;
+}
+.radio-line-list{
+    margin-top:5px;
+}
+.form-photo{
+    width:114px;
+    height:136px;
+    border:1px solid #999999;
+    vertical-align: bottom;
+}
+.common-form input[type="radio"],
+.common-form input[type="checkbox"] {
+    margin-top: 2px;
+}
+.row-icon-btn{
+    cursor:pointer;
+}
+.form-line-vm{
+    line-height:26px;
+}
+/******************************** 表单公共样式 end ********************************/
+
+/******************************** 地图展示单个块 start ********************************/
+.map-block-panel {
+    position: absolute;
+    top: 89px;
+    right: 20px;
+    bottom: 0px;
+}
+.provinces-distribution-block,
+.map-block-item{
+    width:325px;
+    margin-bottom:13px;
+}
+.provinces-distribution-block .map-block-content>div{
+	z-index:2;
+}
+
+.map-block{
+    width:100%;
+    height:100%;
+    font-family:\5FAE\8F6F\96C5\9ED1;
+    position:relative;
+    background: rgba(255,255,255,0.8);
+}
+.map-block-header{
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #308ae0;
+    width: 100%;
+}
+.map-block-btn{
+    float: right;
+    margin-right: 6px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.map-block-link{
+    float:right;
+    margin-right:10px;
+    font-size:12px;
+    color:#fff;
+    cursor: pointer;
+}
+.map-block-link:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.map-block-label{
+    font-size:14px;
+    margin-left:10px;
+    float: left;
+}
+.map-block-content{
+	display:none;
+    border:1px solid #d5d5d2;
+    font-size: 12px;
+	-webkitTransition: height .5s;
+	   -mozTransition: height .5s;
+	    -msTransition: height .5s;
+	     -oTransition: height .5s;
+	       transition: height .5s
+}
+.map-block-content.closeing{
+	overflow:hidden;
+}
+.map-block-content.in{
+	display:block;
+}
+/******************************** 地图展示单个块 end ********************************/
+
+/******************************** 遮罩层样式 start ********************************/
+.window-shade{
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+	z-index:2000;
+	background:rgba(0,0,0,0.5) url(../images/common/loading.gif) no-repeat 50% 50%;
+}
+/******************************** 遮罩层样式 end ********************************/
+
+/******************************** 预警样式 开始 ********************************/
+.yujin-list{
+	height:380px;
+	margin-top: 20px;
+}
+
+.yujin-list p{
+	margin-left:10px;
+}
+.yujin-list span{
+	margin-left:10px;
+}
+.yujin-province-div button{
+	margin:0 10px 20px 10px;
+	width:74px;
+}
+.yujin-resource-div button{
+	margin:0 10px 20px 10px;
+	width:150px;
+}
+.yujin-province-div label{
+    cursor: pointer;	
+}
+.yujin-resource-div label{
+	cursor: pointer;
+}
+.if-sendto-yujin button{
+	margin:0 10px 20px 10px;
+	width:188px;
+}
+.yujin-list .active{
+	background:#337ab7;
+	color: #ddd;
+}
+.yujin-time-div input{
+	width:187px;
+    border: 1px solid #ccc;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius:5px;
+    height:33px;
+}
+.if-sendto-yujin{
+	margin-top:20px;
+}
+.if-sendto-yujin input{
+	vertical-align:middle
+}
+/******************************** 预警样式结束 ********************************/
+
+/******************************** 重点人员展示-人员登记过滤 start ********************************/
+.map-filter-panel{
+    position: absolute;
+    top:89px;
+    left:45%;
+    z-index:2;
+}
+.map-filter{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.8);
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    font-size: 14px;
+    overflow: hidden;
+}
+.map-filter-select{
+    width: 67px;
+    height: 26px;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    color: #333333;
+    vertical-align: middle;
+    float: left;
+    margin: 6px 0px 0px 20px;
+}
+.level-list-panel{
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin-left: 4px;
+}
+.check-list{
+    color: #bbbbbb;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.check-item{
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 54px;
+    text-align: center;
+}
+.check-item label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.level-list-panel .check-item .glyphicon{
+	display:none;
+}
+.level-list-panel .check-item .check-item-target{
+	display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #cccccc;
+    vertical-align: middle;
+    margin-right: 2px;
+    border-radius: 2px;
+    margin-top:-2px;
+}
+.level-list-panel .check-item:first-child .check-item-target{
+	display:none;
+}
+.check-item [type=checkbox]{
+    position: absolute;
+    left: -100000px;
+}
+.check-item.active{
+    color:#333333;
+}
+.level-list-panel .check-item:nth-child(2).active .check-item-target{
+    background-color: #e94141;
+}
+.level-list-panel .check-item:nth-child(3).active .check-item-target{
+    background-color: #f78425;
+}
+.level-list-panel .check-item:nth-child(4).active .check-item-target{
+    background-color: #e4ca1b;
+}
+.level-list-panel .check-item:nth-child(5).active .check-item-target{
+    background-color: #447ee8;
+}
+.level-list-panel .check-item:nth-child(6).active .check-item-target{
+    background-color: #19c756;
+}
+/******************************** 重点人员展示-人员登记过滤 end ********************************/
+/******************************** 人员分配 开始 ********************************/
+.whole-container-distribute{
+	margin: 10px;
+}
+.distribute-function{
+	overflow:hidden;
+}
+.distribute-function lable{
+	float:left;
+	height: 30px;
+    line-height: 30px;
+    color:#ffffff;
+    font-size:12px;
+}
+.staff-select-case,.staff-select-province,.search-staff-div{
+	width:150px;
+}
+.line-clear{
+	width:auto;
+	float:left;
+}
+.staff-search-go{
+	width:200px;
+	height:30px;
+}
+.distribute-function button{
+	margin-right:10px;
+	font-size:12px;
+}
+.distribute-table-show{
+	margin-top:10px;
+	font-size:12px;
+}
+/* 人员分配 表头 */
+.distribute-table-show th{
+	background-color:#e9f9ff;
+}
+.distribute-staff-table-show{
+	background-color:#ffffff;
+}
+.distribute-staff-table-show thead{
+    color:#278add;
+    background-color:#ffffff;
+}
+.distribute-staff-table-show label{
+    background-color: #2BA1EC;
+    display: inline-block;
+    margin-bottom:0px
+}
+.distribute-staff-table-show span{
+	margin-right: 10px;
+    display: inline-block;
+    line-height: 20px;
+    padding-top: 2px;
+}
+.staff-assign-tree{
+	height:300px;
+	overflow-y: auto;
+	margin-top: 10px;
+	border-bottom: 1px dotted #9dbef6;
+}
+.search-assign-staff span{
+	cursor:pointer;
+}
+.assign-selected-list{
+	height:345px;
+	overflow-y: auto;
+	border-bottom: 1px dotted #9dbef6;
+}
+.assign-selected-list thead{
+    color:#278add;
+    background-color:#ffffff;
+}
+.look-detail{
+	cursor: pointer;
+}
+.look-detail:hover{
+	color:#2BA1EC;
+	text-decoration: underline;
+}
+/******************************** 人员分配 结束 ********************************/
+
+/******************************** 批量导入 开始 ********************************/
+.import-whole-container{
+	margin-left:20px;
+	margin-right:20px;
+	font-size:12px
+}
+.one-first-div a{
+	margin-left:20px;
+	font-size:12px
+}
+.one-first-div label{
+	margin-right:10px
+}
+.two-first-div{
+	margin-top:10px;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.two-first-div .col-xs-3{
+	padding-left:0px;
+}
+.required-fillin{
+	color:red;
+	font-size:28px;
+	vertical-align:-webkit-baseline-middle;
+}
+.filter_createtime{
+	width:300px
+}
+.three-first-div{
+	color:red;
+}
+.start-line-import{
+	width:70px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.two-second-div{
+	margin-top:10px;
+}
+.two-second-div label{
+	margin-right:30px;
+}
+.wijmo-container{
+	margin-top:10px;
+	height:300px
+}
+.two-third-div{
+    margin-top:10px;
+    margin-bottom:10px		
+}
+.two-third-div span{
+	display:inline-block;
+	margin-top:6px
+}
+.two-third-div input{
+	display:inline-block;
+}
+.right-data-wijmo{
+	height:300px
+}
+.wrong-data-wijmo{
+	height:300px
+}
+.save-success-wijmo{
+	height:300px;
+	margin-top:10px
+}
+.save-modal-input{
+	display: inline-block;
+    width: 100px;
+}
+.save-modal-label{
+	display:none;
+}
+/******************************** 批量导入 结束 ********************************/
+
+/******************************** 重改wijmo样式 开始 ********************************/
+.wj-cell{
+	text-align:left!important;
+}
+/******************************** 重改wijmo样式 结束 ********************************/
+
+/******************************** 公共查询样式 开始 ********************************/
+.common-search{
+	/* overflow:hidden; */
+	font-size:12px;
+}
+.common-search .btn{
+	font-size:12px;
+}
+.common-search .control-label{
+    float: left;
+    height: 30px;
+    width:60px;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align:right;
+}
+.common-search .control-panel{
+	margin-left:60px;
+}
+/******************************** 公共查询样式 结束 ********************************/
+
+/******************************** 更多信息内容样式 start ********************************/
+.more-table{
+    margin-top: 10px;
+    font-size: 12px;
+    background-color:#fff;
+}
+/******************************** 更多信息内容样式 end ********************************/
+/******************************** 导出按钮样式开始 ********************************/
+.export-button{
+	width:50px;
+	height:20px;
+	font-size:12px;
+	margin-left:10px;
+	padding:0px;
+}
+
+/******************************** 导出按钮样式 结束 ********************************/
+
+/******************************** 滚动消息 样式开始 ********************************/
+.message-scroll{
+	margin:10px;
+	border-radius:5px;
+	height:25px;
+	width:100%
+}
+.scroll-marquee-div{
+	background-color:rgba(255,255,255,.2);
+	color:#ffffff;
+	font-size:20px;
+	position:relative;
+	width:95%;
+	overflow: hidden;
+	float:left;
+	/* font-family:"华文行楷" */
+}
+.container-mess-div{
+	width:3000px;
+}
+.message-report-warning{
+	display:block;
+	float:left;
+	color:#ffffff;
+	font-size:24px;
+	position:relative;
+	margin-left:-24px;
+	cursor: pointer;
+}
+.message-report-warning:after{
+	display:block;
+	content:attr(data-mess);
+	border-radius:50%;
+	background-color:red;
+	height:15px;
+	line-height:15px;
+	font-size:1px;
+	text-align:center;
+	position:absolute;
+	padding:0px 4px;
+	top:-7px;
+	left:14px;
+}
+.message-report-warning-zero{
+	display:block;
+	float:left;
+	color:#ffffff;
+	font-size:24px;
+	position:relative;
+	margin-left:-24px;
+	cursor: pointer;
+}
+.message-report-warning-zero:after{
+	display:block;
+	content:attr(data-mess);
+	border-radius:50%;
+	background-color:#0FE51F;
+	height:15px;
+	line-height:15px;
+	font-size:1px;
+	text-align:center;
+	position:absolute;
+	padding:0px 4px;
+	top:-7px;
+	left:14px;
+}
+.message-search-div lable{
+	float:left;
+	line-height: 34px;
+}
+.message-search-div{
+	font-size:12px
+}
+.message-search-div button{
+	font-size:12px
+}
+.search-message-staff,.search-message-target{
+	width:150px;
+	border-radius:5px;
+	border:1px solid #e5e5e5;
+	height:34px;
+}
+.message-level-select{
+	width: 150px;
+	height:34px;
+    display: inline-block;
+    border-radius:5px;
+	height:34px;
+	font-size:12px;
+}
+.message-level-select .search-select-content{
+	color:#A9A9A9!important;
+	padding-left:0px;
+	line-height:34px;
+}
+.message-level-select .search-select-panel{
+	height:34px!important;
+}
+.message-table-show{
+	margin-top:20px;
+	height:350px;
+	overflow-y: auto;
+	clear:both;
+	font-size:12px
+}
+.pagnation-div{
+	font-size:12px
+}
+.search-message-button,.batch-going-xukong{
+    margin-right:5px	
+}
+.message-table-show th{
+	background-color:#e9f9ff;
+}
+.to-continue-control{
+	margin-right:10px;
+	font-size:12px
+}
+.no-remind{
+	font-size:12px
+}
+.continue-control-div{
+	padding-left:20px;
+}
+.continue-control-input{
+	border-radius:5px;
+	border:1px solid #e5e5e5;
+	height:34px;
+	line-height:34px;
+}
+/******************************** 滚动消息 样式结束 ********************************/
+
+/******************************** 带查询的下拉框 start ********************************/
+.search-select-panel{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    position: relative;
+    cursor: pointer;
+}
+.search-select-content{
+    height: 100%;
+    border: 0;
+    display:block;
+    margin-right:34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 10px;
+    color: #333333;
+}
+.search-select-down{
+    float: right;
+    height: 100%;
+    width: 34px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: url(../images/xiala.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search-select-list-wrap{
+    z-index: 8;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 0;
+    border: 1px solid #eee;
+    box-shadow: 0px 7px 19px rgba(0,0,0,0.4);
+    top: 28px;
+    left: 0px;
+}
+.search-select-list-wrap.hide{
+	display:none;
+}
+.search-select-search-panel{
+    height: 30px;
+    border-bottom: 1px solid #eee;
+}
+.search-select-search-control{
+    display: block;
+    height: 28px;
+    width: 100%;
+    padding-left: 5px;
+    border: none;
+    line-height: 28px;
+}
+.search-select-list{
+	max-height: 200px;
+    overflow: auto;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.search-select-list-item{
+    height: 26px;
+    line-height: 26px;
+    border-bottom: 1px solid #eee;
+    padding-left: 12px;
+}
+.search-select-list-item-label{
+	font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.search-select-list-item-label [type=checkbox]{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.search-select-list-item-text{
+	font-weight: 100;
+	vertical-align: middle;
+}
+.search-select-button-wrap{
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+.search-select-button-confirm{
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 9px;
+    display: block;
+    margin: 4px auto;
+    line-height: 12px;
+    font-size: 12px;
+    width: 90%;
+    margin-top: 6px;
+}
+/******************************** 带查询的下拉框 end ********************************/
+
+/******************************** 布撤控异常处理  start ********************************/
+.exception-search{
+	width:100%;
+}
+.exception-show{
+	background-color:#ffffff;
+	margin:60px 10px;
+	clear:both;
+	font-size:12px
+}
+.exception-show th{
+	background-color:#e9f9ff;
+}
+.exception-table-show{
+	overflow-y: auto;
+}
+.exception-deal-search{
+  margin-top:10px;	
+}
+.exception-deal-search lable{
+	float:left;
+	color:#ffffff;
+	line-height:34px;
+	font-size:12px;
+}
+.exception-search-button{
+	font-size:12px;
+}
+.exception-search-staff,.exception-search-target,.exception-search-reason{
+	width:150px;
+	height:34px;
+}
+.exception-deal-case .search-select-panel{
+	width:150px!important;
+	height:34px;
+}
+.exception-deal-case .search-select-content{
+	color:#999;
+}
+.reStart-control,.recall-province,.recall-resource,.batch-restart-control,.batch-recall-resource,.exception-search-button,.batch-recall-province{
+	margin-right:5px;
+	font-size:12px;
+}
+.exception-deal-search .col-xs-3{
+	padding-right:5px!important;
+	padding-left:5px!important;
+}
+/******************************** 布撤控异常处理 end ********************************/

@@ -1,0 +1,87 @@
+<div class="whole-container-distribute" ng-controller="staffDistribute">
+    <!-- 人员分配操作栏 -->
+    <div class="distribute-function">
+        <div class="rows">
+            <div class="col-xs-2 line-clear">
+                <lable>案件名称：</lable>
+                <select class="form-control input-sm staff-select-case chosen-select" data-rel="chosen">
+                    <option data-id="12345">测试案件</option>
+                    <option data-id="12346">李明抢劫案</option>
+                    <option data-id="13456">金鱼被杀案</option>
+                    <option data-id="23456">总队测试案件测试测试测试总队测试案件总队测试案件</option>
+                </select>
+            </div>
+            <div class="col-xs-2 line-clear">
+                <lable>人员名称：</lable>
+                <div class="input-group search-staff-div">
+                    <input type="text" class="form-control staff-search-go" placeholder="请输入人员名称">
+                </div>
+            </div>
+            <div class="col-xs-2 line-clear">
+                <lable>创建时间：</lable>
+                <div class="input-group search-staff-div">
+                    <input type="text" ui-jq="datetimepicker" ui-options="{
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        maxView: 3,
+                        initialDate: dates.date_initial,
+                        endDate: dates.date_end,
+                        language: 'zh-CN'
+                        }" ui-refresh="dates.date_end" ui-opt="{setEndDate: dates.date_end}" ng-model="dates.date_start" class="form-control staff-search-go" placeholder="请选择开始时间">
+                    <input type="text" ui-jq="datetimepicker" ui-options="{
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        maxView: 3,
+                        startDate: dates.date_start,
+                        language: 'zh-CN'
+                        }" ui-refresh="dates.date_start" ui-opt="{setStartDate: dates.date_start}" ng-model="dates.date_end" class="form-control staff-search-go" placeholder="请选择结束时间">
+                    <span class="glyphicon glyphicon-search input-group-addon search-staff-span"></span>
+                </div>
+            </div>
+            <div class="col-xs-2 line-clear">
+                <lable>采集地：</lable>
+                <select class="form-control input-sm staff-select-province chosen-select">
+                    <option data-code="">请选择</option>
+                    <option data-code="110000">北京</option>
+                    <option data-code="120000">天津</option>
+                </select>
+            </div>
+            <div class="col-xs-6 line-clear">
+                <button type="button" class="btn btn-primary distribute-to-somewhere">指派给</button>
+                <button type="button" class="btn btn-primary recall-some-distribute">取消部分指派</button>
+                <button type="button" class="btn btn-primary recall-all-distribute">清空所有指派</button>
+            </div>
+        </div>
+    </div>
+    <!-- 人员分配列表展示 -->
+    <div class="distribute-table-show">
+        <div class="distribute-staff-table-show" style="position: relative;">
+            <div style="height: 100%; overflow: auto;">
+                <table class="table tb-custom">
+                    <thead>
+                        <tr>
+                            <th style="width:20px;"><input id="checkAll" type="checkbox"></th>
+                            <th class="table_column_0">编号<div class="th-width"></div></th>
+                            <th class="table_column_1 can-order" style="cursor: pointer;">人员名称<span class="glyphicon glyphicon-chevron-up" style="color:#f99c00;padding-left:5px;width:17px;height:12px;"></span><div class="th-width"></div></th>
+                            <th class="table_column_2">创建人<div class="th-width"></div></th>
+                            <th class="table_column_3">采集地<div class="th-width"></div></th>
+                            <th class="table_column_4">指派给<div class="th-width"></div></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:20px;text-align: center;"><input class="row-check" targetguid="undefined" iwcguid="undefined" sn="undefined" level="undefined" target="undefined" type="checkbox"></td>
+                            <td data-key="index" class="table_column_0" style="" width="10%"><div title="1">1</div></td>
+                            <td data-key="objectName" class="table_column_1" style="" title="痴痴缠缠" width="15%"><span class="look-detail">痴痴缠缠</span></td>
+                            <td data-key="creatPerson" class="table_column_2" style="" title="李聘" width="10%">李聘</td>
+                            <td data-key="collectUnit" class="table_column_3" style="" title="河北" width="10%">河北</td>
+                            <td data-key="opera" class="table_column_4" style="">
+                                <label class="label label-info"><span>李聘</span><button type="button" class="close recall-asign" name="李聘" data-guid="4028c1ef5e36155f015e3616310f0002" data-toggle="modal" aria-label="Close"><span aria-hidden="true">x</span></button></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

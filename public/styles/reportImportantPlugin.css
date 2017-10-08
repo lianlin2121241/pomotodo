@@ -1,0 +1,142 @@
+@CHARSET "UTF-8";
+/*
+* @Author: Marte
+* @Date:   2017-07-12 14:59:50
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-14 08:44:34
+*/
+/* 大布局样式 */
+.reportSearchContainer {
+	height: 150px;
+	margin: 0 50px;
+	margin-top: 20px;
+	border-radius: 4px;
+	background-color: #fff;
+}
+.reportToolsDiv {
+	height: 34px;
+	margin: 15px 50px;
+}
+.reportResultsDiv {
+	margin: 0 50px;
+	background-color: #fff;
+}
+/* 大布局样式结束*/
+/* 案件搜索局部样式 */
+.reportTime,.reportProvince,.reportState {
+	height: 35px;
+	margin-top: 15px;
+	border-bottom: 1px dotted #9dbef6;
+}
+.reportState {
+	border: none;
+}
+.reportTime>div {
+	display: inline-block;
+}
+.recentDay {
+	margin-left: 20px;
+}
+.appointTime {
+	margin-left: 58px;
+}
+.recentDay span,.appointTime span {
+	margin: 0 6px;
+	padding-right: 4px;
+}
+.recentDayInput,.appointTimeAction,.appointTimeActionEnd {
+	border-radius: 3px;
+	border: 1px solid #bbb;
+	text-align: center;
+}
+.recentDayInput {
+	width: 54px;
+}
+.appointTimeAction,.appointTimeActionEnd {
+	width: 110px;
+}
+.reportProvinceSelect{
+	height: 25px;
+	width: 130px;
+	margin-left: 20px;
+	border-radius: 3px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.states {
+	display: inline-block;
+	margin: 0 20px;
+}
+.exactDay {
+	margin-left: 10px;
+	background-color: #eee;
+	padding: 3px 16px;
+	border-radius: 5px;
+}
+.choseDay {
+	color: #eee;
+	background-color:#337ab7;
+}
+.reportTime>div input{
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.reportState>div input{
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.reportSearch {
+	text-align: right;
+	margin-top: 108px;
+	color : #fff;
+}
+.reportSearch button {
+	border: none;
+	background-color: #286090;
+	padding: 5px 18px;
+	border-radius: 5px;
+}
+/* 案件搜索局部样式结束*/
+/* 工具栏局部样式开始*/
+.reportTollColume{
+	display: inline-block;
+	float: left;
+}
+.tools-search {
+	width: 250px;
+}
+.reportDetail {
+	background-position: 1px -138px;
+}
+.reportAssign {
+	background-position: 2px 4px;
+}
+/* 工具栏局部样式结束*/
+/* 搜索结果局部样式开始*/
+.paging-info {
+	margin-left: 36%;
+}
+.paging-plugin {
+	margin-right: 10%;
+}
+/* 搜索结果局部样式结束*/
+/* 分派样式开始*/
+.case-assign-tree {
+	height: 345px;
+	overflow-y: auto;
+	color: rgb(39, 138, 221);
+	border: 1px solid #ddd;
+}
+.reportCaseTree {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.reportCaseTree li {
+	padding: 5px 10px;
+	border-bottom: 1px solid #ddd;
+}
+.active {
+	background-color: #d4eeff;
+}
+/* 分派样式结束*/

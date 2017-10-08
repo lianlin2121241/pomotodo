@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+/*
+* @Author: Marte
+* @Date:   2017-07-12 15:00:35
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-13 20:41:31
+*/
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    width: 100%;
+    height:100%;
+    overflow: auto;
+}
+body{
+    min-width: 1260px; 
+    min-height: 600px; 
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+
+/**
+ * 修改synwayui中不允许模态框横向滚动
+ */
+.modal-open .modal {
+    overflow-x: auto;
+}
+/**
+ * 修改bootstrap中table的下边距
+ */
+.table {
+	margin-bottom: 0px;
+}

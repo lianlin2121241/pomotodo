@@ -1,0 +1,112 @@
+<style>
+	/*调试用，可删*/
+	/*.search-container{
+		height: 254px;
+	}*/
+</style>
+<div class="search-container" ng-controller="staffManageList">
+    <div class="rows">
+        <div class="col-xs-10">
+            <div class="now-case">
+                <label class="label-for-right"><b>当前案件：</b></label>
+                <span class="choiced-case" id="12345">测试案件</span>
+            </div>
+            <!--<div class="person-level">
+                <label class="label-for-right"><b>重点人级别：</b></label>
+                <div class="level-container">
+                	<check-box type="multiCheck"  source="data" default="true" ></check-box>
+                </div>
+            </div>-->
+            <div class="person-level">
+                <label class="label-for-right"><b>重点人级别：</b></label>
+                <div class="level-container">
+                	<check-box type="multiCheck" ischeckall="true" source="data1" default="false" ></check-box>
+                </div>
+            </div>
+            <!--<div class="person-level">
+                <label class="label-for-right"><b>重点人级别：</b></label>
+                <div class="level-container">
+                	<check-box type="singleSelect"  source="data2"></check-box>
+                </div>
+            </div>-->
+            <div class="person-handle">
+                <label class="label-for-right"><b>重点人状态：</b></label>
+                <div class="statue-choice">
+                    <label for="no-operate"><input type="checkbox" id="no-operate" checked="checked" data-statue="0">未操作</label>
+                </div>
+                <div class="statue-choice">
+                    <label for="operate-ing"><input type="checkbox" id="operate-ing" data-statue="5">操作中</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <button type="button" class="btn btn-primary button-case-search"><span class="glyphicon glyphicon-search"></span>搜索</button>
+        </div>
+    </div>
+</div>
+<!-- 工具栏 -->
+<div class="tools-div">
+    <div class="tools-tools">
+        <div class="tools-span" title="添加人员">
+            <span class="case-icon case-icon-addstaff"></span>
+        </div>
+        <div class="tools-span" title="添加目标">
+            <span class="case-icon case-icon-addtarget"></span></div>
+        <div class="tools-span" title="导入">
+            <span class="case-icon case-icon-import"></span>
+        </div>
+        <div class="tools-span" title="删除">
+            <span class="case-icon case-icon-delete"></span>
+        </div>
+        <div class="tools-span" title="批量布控">
+            <span class="case-icon case-icon-bukong"></span>
+        </div>
+        <div class="tools-span" title="批量预警">
+            <span class="case-icon case-icon-yujing"></span>
+        </div>
+        <div class="tools-span" title="人员等级变更">
+            <span class="case-icon case-icon-changelevel"></span>
+        </div>
+        <div class="tools-span" title="批量撤控">
+            <span class="case-icon case-icon-chekong"></span>
+        </div>
+        <div class="tools-span" title="批量取消预警">
+            <span class="case-icon case-icon-recallyujing"></span>
+        </div>
+    </div>
+    <div class="tools-search">
+        <div class="search-from-case">
+            <div class="input-group">
+                <input type="text" class="form-control search-input-tools" placeholder="请输入关键字">
+                <span class="input-group-addon glyphicon glyphicon-search search-button-tools"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  结果显示列表 -->
+<div class="results-div">
+    <div class="table-show" style="position: relative;">
+        <table class="table table-bordered tb-custom" style="text-align:center;">
+            <tbody><tr><td colspan="6"><span class="input-group" style="width:100%;text-align:center">无数据</span></td></tr></tbody>
+        </table>
+    </div>
+    <div class="pagnation-div">
+        <div id="rowException" class="table-paging">
+            <div id="pagingConfigException" class="paging-plugin"></div>
+            <div class="paging-info">
+                <span style="float:left">显示</span>
+                <span id="perPageShowFirst" style="float:left"></span>
+                <span style="float:left">-</span>
+                <span id="perPageShowLast" style="float:left"></span>
+                <span style="float:left">条记录，</span>
+                <span style="float:left">共</span>
+                <span id="totalRowsConfigException" style="float:left"></span>
+                <span style="float:left">条，</span>
+                <span style="float:left">每页</span>
+                <input type="text" title="请回车进行确认" style="text-align:center;float:left;width:42px;height:20px" id="confirmRowsException" name="rows" value="100" class="form-control input-sm page-input">
+                <span style="float:left">条</span>
+                <a class="btn btn-primary export-button">导出</a>
+            </div>
+        </div>
+    </div>
+</div>

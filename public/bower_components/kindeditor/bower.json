@@ -1,0 +1,27 @@
+{
+  "name": "kindeditor",
+  "main": [
+    "kindeditor.js",
+    "lang/zh-CN.js",
+    "themes/default/default.css"
+  ],
+  "version": "1.0.0",
+  "homepage": "https://github.com/twocabbages/kindeditor",
+  "authors": [
+    "cabbage <251949141@qq.com>"
+  ],
+  "description": "web editor",
+  "keywords": [
+    "web",
+    "javascript",
+    "editor"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

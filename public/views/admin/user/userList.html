@@ -1,0 +1,24 @@
+<div class="container" ng-controller="userManage">
+	<div>
+		<button type="button" class="btn btn-primary" ng-click="addUser('lg')">新增</button>
+	</div>
+	<script type="text/ng-template" id="addUser.html">
+		<div ng-include="'views/admin/user/addUser.html'"></div>
+	</script>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>用户名</th>
+				<th>姓名</th>
+				<th>创建时间</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in userList">
+				<td>{{item.name}}</td>
+				<td>{{item.realName}}</td>
+				<td>{{item.meta.updateAt}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,62 @@
+/* CSS Document */
+.synalPagination {
+	font-size: 80%;
+	display: inline-block;
+	padding-top: 8px;
+}
+.synalPagination a,.synalPagination span {
+	text-decoration: none;
+	color: #337ab7;
+	background-color:#fff;
+	line-height: 13px;
+	width: 30px;
+	 height: 30px; 
+	border: 1px solid #ddd;
+	float: left;
+	text-align: center;
+	padding: 8px 0px;
+	font-size: 12px;
+	margin-left: -1px;
+}
+.synalPagination .prev{
+	border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.synalPagination .next{
+	border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.synalPagination a:hover{
+	color:#337ab7;
+	background-color:#eee;
+}
+.synalPagination .current {
+	color:#fff;
+	background-color:#337ab7;
+}
+.next ,.prev{
+	color: #337ab7!important;
+	background-color:#fff!important;
+}
+.synalPagination .current .page_current_l{
+	width: 0px;
+	position: relative;
+	vertical-align: middle;
+	float: left;
+}
+.synalPagination .current .page_current_r{
+	width:0px;
+	vertical-align: middle;
+	float:left;
+	position:relative;
+}
+.synalPagination .current .page_current_m{
+	width: 26px;
+	height: 16px;
+	vertical-align: middle;
+	line-height: 14px;
+	position: relative;
+	float: left;
+	color: #359ea4;
+	font-size: 14px;
+}

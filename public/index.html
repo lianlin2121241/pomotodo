@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>demo</title>
+    <meta name="description" content="">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/smalot-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"/>
+    <!-- endbower -->
+
+    <!-- custom:css -->
+    <link rel="stylesheet" href="styles/plugin.css"/>
+    <link rel="stylesheet" href="styles/page.css"/>
+    <link rel="stylesheet" href="styles/common.css"/>
+</head>
+<body ng-app="myApp">
+<div class="upload-wrap" ui-view></div>
+<div class="shade" ng-class="{'shade-show':showShade}"></div>
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/angular-ui-router/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+<script src="bower_components/ng-file-upload-shim/ng-file-upload-shim.js"></script>
+<script src="bower_components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="bower_components/Sortable/Sortable.js"></script>
+<script src="scripts/vendor/nicescroll/jquery.nicescroll.js"></script>
+<script src="scripts/vendor/ocLazyLoad/ocLazyLoad.js"></script>
+<script src="bower_components/smalot-bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<!-- endbower -->
+
+<!-- Wijmo -->
+<script src="scripts/vendor/wijmo/wijmo.min.js" type="text/javascript"></script>
+<script src="scripts/vendor/wijmo/wijmo.grid.min.js" type="text/javascript"></script>
+
+<!-- Wijmo-Angular interop -->
+<script src="scripts/vendor/wijmo/wijmo.angular.min.js" type="text/javascript"></script>
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/config.js"></script>
+<script src="scripts/config.router.js"></script>
+<script src="scripts/config.lazyload.js"></script>
+
+<!-- import controllers -->
+<!-- <script src="scripts/controllers/importmain.js"></script>
+<script src="scripts/controllers/types.js"></script>
+<script src="scripts/controllers/define.js"></script>
+<script src="scripts/controllers/assign.js"></script> -->
+<!-- import services -->
+<script src="scripts/services/globalFactory.js"></script>
+<script src="scripts/services/commonFunfactory.js"></script>
+<script src="scripts/services/apiFactory.js"></script>
+<script src="scripts/services/ui-load.js"></script>
+<!-- <script src="scripts/services/commonfunfactory.js" type="text/javascript"></script> -->
+<!-- import directives -->
+<script src="scripts/directives/ui-jq.js"></script>
+<script src="scripts/directives/staffManageListController.js"></script>
+<!-- <script src="scripts/directives/autofocusdirective.js"></script>
+<script src="scripts/directives/onFinishRenderFilters.js"></script>
+<script src="scripts/directives/ui-addcategory.js"></script>
+<script src="scripts/directives/ui-nav.js"></script>
+<script src="scripts/directives/ui-focus.js"></script>
+<script src="scripts/directives/ui-butterbar.js"></script>
+<script src="scripts/directives/preview-link.js"></script>
+<script src="scripts/directives/auto-clear.js"></script>
+<script src="scripts/directives/ui-jq.js"></script> -->
+<!-- import filters -->
+<script src="scripts/filters/generalFilter.js"></script>
+<!-- upload app -->
+</body>
+</html>

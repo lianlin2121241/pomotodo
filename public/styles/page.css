@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+/*
+* @Author: Marte
+* @Date:   2017-07-12 15:00:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-12 15:00:08
+*/
+
+/*********************** 重点人员管控-人员查看页面下边的表格样式  start  *************************/
+.target-view-panel{
+    margin: 0px 35px 0px;
+}
+/*********************** 重点人员管控-人员查看页面下边的表格样式  end  *************************/
+
+/*********************** 人员查看页面下边的表格样式  start  *************************/
+.absolute-flex .ds-header{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:2;
+}
+/*********************** 人员查看页面下边的表格样式  end  *************************/
+
+/*********************** 人员信息展示  start  *************************/
+.table-show-form{
+    table-layout: fixed;
+    width: 100%;
+}
+.table-show-form>tbody>tr>td{
+	padding-left: 1px;
+    padding-right: 1px;
+    border: none;
+}
+.table-show-form>tbody>tr>td:nth-child(0),
+.table-show-form>tbody>tr>td:nth-child(2),
+.table-show-form>tbody>tr>td:nth-child(4){
+    width: 22%;
+}
+.table-show-form>tbody>tr>td:nth-child(1),
+.table-show-form>tbody>tr>td:nth-child(3),
+.table-show-form>tbody>tr>td:nth-child(5){
+    width: 11%;
+    text-align: right;
+}
+/*********************** 人员信息展示  end  *************************/
+
+/*********************** 重点人员展示-失联人员  start  *************************/
+.loss-staff{
+	font-size:12px;
+}
+.loss-staff span{
+	height:auto;
+    line-height: 14px;
+    padding: 4px 5px;
+    white-space: nowrap;
+}
+.loss-staff .list-search{
+	height:32px;
+	background-color:#e9f9ff;
+	overflow:hidden;
+}
+.loss-staff .list-search .check-list{
+    color: #f99c00;
+    margin-bottom: 0px;
+    padding: 0px;
+    width: 207px;
+    display: block;
+    margin: 5px auto;
+    height: 20px;
+}
+.list-search .check-item{
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 54px;
+    text-align: center;
+    width: 57px;
+    height: 20px;
+    line-height: 19px;
+    border-radius: 10px;
+    background: #fff;
+    font-weight: 100;
+    font-size: 12px;
+    border: 1px solid #f99c00;
+    margin: 0px 6px;
+}
+.list-search .check-item label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-weight: 100;
+}
+.list-search .check-item .glyphicon{
+	display:none;
+}
+.list-search .check-item [type=radio]{
+    position: absolute;
+    left: -100000px;
+}
+.list-search .check-item.active{
+    color: #ffffff;
+    background-color: #f99c00;
+}
+.loss-staff .table{
+	text-align:center;
+}
+.loss-staff .tr-span{
+	margin-right:0px;
+	margin:0px 3px;
+}
+/*********************** 重点人员展示-失联人员  end  *************************/
+
+/*********************** 公共查询表头radio样式  start  *************************/
+.common-list-search .check-list{
+	margin:5px 0px;
+}
+/*********************** 公共查询表头radio样式  end  *************************/

@@ -1,0 +1,326 @@
+@CHARSET "UTF-8";
+/*
+* @Author: Marte
+* @Date:   2017-07-12 15:00:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-12 15:00:08
+*/
+
+/*********************** 案件框样式  *************************/
+.search-case{
+	width:280px;
+	height: 30px;;
+}
+.showHide{
+    display: none;
+}
+.caseLists{
+	display: inline-block;
+	float: left;
+	width: 180px;
+	height: 30px;
+	font-size: 12px;
+	line-height: 34px;
+	border: 1px solid #ccc;
+   	border-radius: 4px;
+	background: white;
+	position: relative;
+    cursor: pointer;
+}
+.caseArray{
+	width: 142px;
+	height: 28px;
+    float: left;
+    border: 0;
+	font-size: 1rem;
+	line-height: 28px;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left: 10px;
+	color: #333333;
+}
+.pullDown{
+	float: right;
+	height:28px;
+	width:34px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-image: url(../images/xiala.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pullDown img{
+	width:10px;
+	margin: 12px 0 0 12px;
+}
+.allChose{
+	float: left;
+	margin-left: 10px;
+	padding: 0 8px;
+	font-size: 12px;
+	line-height: 28px
+}
+.allChose .checkbox-inline input[type=checkbox]{
+	margin-top:8px;
+	margin-left:-17px;
+}
+.orderly{
+	float:right;
+	padding: 0 8px;
+	font-size: 12px;
+	line-height: 28px
+}
+.caseName{
+	font-weight: 100;
+}
+.case-search-done{
+	height: 30px;
+	border-bottom: 1px solid #eee;
+}
+.caseSearchInput{
+	display: inline-block;
+    height: 28px;
+    width: 176px;
+    padding-left: 5px;
+    border: none;
+    line-height: 28px;
+}
+.mapCaseNameUp{
+	height: 35px;
+    width: 38px;
+    line-height: 35px;
+    text-align: center;
+    top: 0;
+    background-color: white;
+}
+.mapCaseNameDown{
+	padding: 0 11px;
+    line-height: 35px;
+    top: 0;
+    padding-right: 12px;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    border-top-right-radius: 8px;
+}
+.caseLists .case-search-btn{
+	line-height: 28px;
+    padding: 0px 9px;
+    top: 0;
+}
+/*********************** 案件树样式  end  *************************/
+/*********************** 案件展示样式   *************************/
+.case-tree {
+	width: 180px;
+    height: auto;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+}
+.case-list-panel{
+    z-index: 8;
+    position: absolute;
+    width: 178px;
+    background-color: white;
+    margin-bottom: 0;
+    border: 1px solid #eee;
+    box-shadow: 0px 7px 19px rgba(0,0,0,0.4);
+    top: 28px;
+    left: 0px;
+}
+.case-list-ul{
+	max-height: 200px;
+    overflow: auto;
+	list-style: none;
+    width: 100%;
+    margin-bottom:0px;
+}
+.case-list-ul li{
+	height: 27px;
+    line-height: 12px;
+    border-bottom: 1px solid #eee;
+    padding-left: 12px;
+    font-size: 12px;
+}
+.case-list-ul>li>labal{
+	font-weight: 100;
+}
+.case-item-label{
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.case-list-ul li input{
+    margin-right: 17px;
+}
+.controlSure{
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 2px 15px 2px 0;
+    line-height: 12px;
+    font-size: 12px;
+    width: 85%;
+    height:100%;
+    float: right;
+    margin-top: 6px;
+}
+.bottomDiv {
+	width: 100%;
+    height: 33px;
+    border-top: 1px solid #eee;
+}
+.controlCancel{
+	margin-left: 60px;
+	margin-bottom: 8px;
+}
+.containerSure{
+	border: 1px solid #eee;
+    height: 27px;
+    border-top: 0;
+}
+
+/*********************** 案件树样式  end  *************************/
+/*********************** 案件展示样式   *************************/
+.caseShow {
+	position: absolute;
+	top: 138px;
+	width: 276px;
+	margin-left: 12px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.searchPerson{
+	border-bottom: 2px solid #ccc;
+}
+.personInput{
+	display: inline-block;
+    float: left;
+    height: 35px;
+    width: 198px;
+    border-right: 1px solid #e0e0e0;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    padding-left: 5px;
+    border-top-left-radius: 5px;
+    font-size: 12px;
+    border-top-left-radius: 8px;
+}
+.searchBtnP{
+	display: inline-block;
+	padding: 10px 31px;
+    background-color: #eee;
+}
+.case-show-ul{
+    margin-bottom: 0px;
+    overflow:auto;
+    -webkitTransition: height .5s;
+    -mozTransition: height .5s;
+    -msTransition: height .5s;
+    -oTransition: height .5s;
+    transition: height .5s;
+}
+.case-show-ul li{
+	height: 48px;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.case-show-ul .caseDetail{
+    width: 86px;
+    padding-top: 6px;
+    line-height: 20px;
+    font-weight: 100;
+}
+.case-show-ul .caseDetail .personName{
+	font-size: 12px;
+	font-weight: 100;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.case-show-ul .caseDetail .personNumber{
+	font-size: 0.6rem;
+	font-weight: 100;
+    color: #808080;
+}
+.case-show-ul input{
+	margin: 0 20px;
+}
+.caseinput,.caseDetail{
+	display: inline-block;
+    float: left;
+}
+.caseinput{
+	height: 48px;
+}
+.personLevel{
+	margin-top: 14px;
+    height: 22px;
+    background: #f99c00;
+    line-height: 48px;
+    font-size: 1rem;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 9px;
+    padding: 3px 13px;
+}
+.wcz,.bksb,.czz,.bkcg,.ckcg,.cksb,.bfcg{
+	height: 48px;
+    width: 40px;
+    display: inline-block;
+    float: right;
+    margin-right: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .bkcg{
+	background-image: url(../images/bkcg.png);
+} */
+/* .bksb{
+	background-image: url(../images/bksb.png);
+} */
+/* .yjcg{
+	background-image: url(../images/yjcg.png);
+} */
+.bkcg{
+	background-image: url(../images/yjcg.png);
+}
+.bfcg{
+	background-image: url(../images/yjcg.png);
+}
+.cksb{
+	background-image: url(../images/yjcg.png);
+}
+/* .yjsb{
+	background-image: url(../images/yjsb.png);
+} */
+.ckcg{
+	background-image: url(../images/yjsb.png);
+}
+
+.target-list-handle{
+	width: 100%;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+    cursor: pointer;
+}
+.target-list-handle:hover{
+	background:rgba(0,0,0,0.1);
+}
+.target-list-handle>span{
+	font-size:16px;
+}
+.targetColor{
+	background-color: #eee;
+}
+.terminusTarget{
+	background-color: #ccc;
+}
+/*********************** 案件展示样式  end *************************/

@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+/*********************** 城市Table样式  *************************/
+.cityTable{
+	position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.tab-head span{
+	display: inline-block;
+    width: 93px;
+    height: 37px;
+    background-color: #074376;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 37px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.cityList{
+	position: absolute;
+    top: 140px;
+    width: 100%;
+}
+.tab-panel{
+	overflow:hidden;
+}
+/*********************** 城市Table样式  end  *************************/
+/*********************** 城市展示样式   *************************/
+.cityItems{
+  	margin-top: 20px;
+   	height:100%;
+   	margin-bottom:0px;
+   	overflow: auto;
+}
+.everyCityItem{
+	height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.item-select .everyCityItem{
+    cursor:pointer;
+}
+.item-select .everyCityItem:hover{
+    background: rgba(0,0,0,0.2);
+}
+.item-select .everyCityItem.active{
+    background: rgba(0,0,0,0.3);
+}
+.listNumber{
+	display: inline-block;
+    border-radius: 5px;
+    height: 22px;
+    width: 35px;
+    color: white;
+    background-color: #008CFF;
+    margin-top: 0px;
+    line-height: 22px;
+    text-align: center;
+}
+.actionCity{
+	color: white;
+    margin-left: 36px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+.endCity{
+	color: white;
+    float: right;
+    margin-right: 65px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.cityMiddle{
+	color: white;
+}
+.hotCityItems .actionCity {
+	margin-left: 12px;
+}
+.hotCityItems .endCity {
+	margin-right: 35px;
+	width: 80px;
+}
+.enterCityItems .actionCity,.outerCityItems .actionCity{
+	margin-left: 10px;
+}
+.enterCityItems .endCity,.outerCityItems .endCity{
+	margin-right: 24px;
+	width: 100px;
+}
+.cityFind{
+    padding: 0px 0px 0px 15px;
+}
+.cityFindInput{
+	display: inline-block;
+    border: none;
+    height: 30px;
+    width: 306px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.clickColor{
+	background-color: #008CFF !important;
+}
+/*********************** 城市样式  end  *************************/

@@ -1,0 +1,21 @@
+<div class="whole-container">
+    <div class="rows">
+        <div class="col-xs-2" ng-controller="staffManage">
+            <div class="search-case">
+                <div class="input-group">
+                    <input type="text" class="form-control case-search-input" placeholder="请输入案件名称">
+                    <span class="glyphicon glyphicon-search input-group-addon search-case-button"></span>
+                </div>
+            </div>
+            <div class="case-header">
+                <span class="case-icon case-icon-head"></span><span>我的案件</span>
+            </div>
+            <div class="case-tree">
+                <ul class="case-list-ul">
+                    <li id="{{case.key}}" ng-repeat="case in cases"><a ui-sref="app.staffManage.list(({cid:'{{case.key}}',testParam:1}))"><span class="case-icon case-icon-list"></span>{{case.value}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-10" ui-view></div>
+    </div>
+</div>

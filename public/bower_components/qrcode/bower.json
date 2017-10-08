@@ -1,0 +1,7 @@
+{
+  "name": "qrcode",
+  "main": [
+    "qrcode.js"
+  ],
+  "version": "1.0.0"
+}
